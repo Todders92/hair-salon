@@ -1,9 +1,11 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 
-<h2>Category Details</h2>
+<h2>Stlyist Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+<h4>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)</h4>
+<h4>Clients:</h4>
 
 <ul>
 @if (@Model.Clients.Count == 0)
